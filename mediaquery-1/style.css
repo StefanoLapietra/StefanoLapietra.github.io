@@ -1,0 +1,100 @@
+:root {
+    box-sizing: border-box;
+    transition: all .5s ease-out;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    transition: inherit;
+}
+
+/*
+GLOBAL/MOBILE FIRST
+ */
+
+body {
+    font-family: "Candara Light", sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin: .9em;
+}
+
+h2 {
+    font-size: 1.5em 0 0 0;
+    margin: .9em 0 0 0;
+}
+
+figure {
+    background-color: black;
+    border-radius: 2em;
+    color: white;
+    padding: 0.8em;
+    text-align: center;
+    margin: 0 0 .9em 0;
+}
+
+img {
+    flex: 1;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 2em;
+}
+
+.container {
+    margin: 0 .5em;
+}
+
+/*
+FLEX FIGURE
+*/
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+effects
+ */
+figure:hover {
+    background-color: darkorange;
+    cursor: cell;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: aquamarine;
+    }
+
+    figure {
+        float: left;
+        width: calc(50% - 1.5em);
+        margin-right: 1.5em;
+    }
+
+    .kittens::after {
+        content: "";
+        clear: both;
+        display: block;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: burlywood;
+    }
+
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        background-color: aqua;
+        padding: .1em 1.5em;
+    }
+}
+
