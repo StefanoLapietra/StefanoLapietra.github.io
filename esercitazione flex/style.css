@@ -1,0 +1,164 @@
+:root {
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body * + * {
+    margin-top: auto;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: darkorange;
+    font-family: changa one, sans-serif;
+
+}
+
+ul.site-nav {
+    display: flex;
+    padding: 15px;
+    background-color: aliceblue;
+    border-radius: 50px;
+
+
+}
+
+.ul.site-nav li a {
+    padding: .5em;
+    border-radius: 10px;
+
+}
+
+ul.site-nav li a:hover {
+    background-color: gold;
+}
+
+ul.site-nav li + li {
+    margin-left: 1.5em;
+}
+
+ul.site-nav .nav-right {
+    margin-left: auto;
+}
+
+main {
+    display: flex;
+}
+
+main * + * {
+    margin-top: .5em;
+    margin-left: 1.5em;
+    text-align: center;
+}
+
+.tile {
+    background-color: oldlace;
+    padding: 1.5em;
+    border-radius: .5em;
+}
+
+.tile :first-child {
+    margin-top: .3em;
+}
+
+.column-main {
+    flex: 4;
+}
+
+.column-sidebar {
+    flex: 3;
+}
+
+.column-sidebar .tile {
+    flex: 1;
+}
+
+.column-sidebar > .tile > .login-form > .style-button {
+    margin: 1.5em;
+    background-color: #e5b014;
+    display: flex;
+    text-align: center;
+
+}
+
+.column-sidebar > .tile > .login-form > .side-start {
+    text-align: center;
+    display: flex;
+    margin-top: 2em;
+    text-decoration: white;
+}
+
+.tile-centered {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-login {
+
+}
+
+.login-form h3 {
+    margin: 0;
+    font-size: .9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.login-form > label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-form > .username, .login-form > .password {
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+.Money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: .5em;
+    margin-top: .5em;
+}
+
+.Money span {
+    margin: .5em 0 0;
+}
+
+.Big-money {
+    font-size: 2em;
+}
+
+.Moneta {
+    font-size: 4em;
+}
+
+.centesimi {
+    font-size: 1.5em;
+}
+
+.style-button {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    text-decoration: none;
+    padding: .5em;
+    background-color: #e5b014;
+    border-radius: 5em;
+}
+
+
+
