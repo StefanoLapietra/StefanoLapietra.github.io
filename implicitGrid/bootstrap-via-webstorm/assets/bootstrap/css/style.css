@@ -1,0 +1,14 @@
+.d-sm-flex {
+
+@media (min-width: 576px) {
+    display: inline-flex;
+ }
+}
+
+.flex-sm-row{
+    flex-direction: ;
+
+@media (min-width: 576px) {
+    display: inline-flex;
+}
+}
